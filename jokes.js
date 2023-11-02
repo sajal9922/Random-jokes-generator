@@ -12,8 +12,14 @@ const jokes = [
 const jokeElement = document.getElementById('joke');
 const getJokeButton = document.getElementById('getJokeButton');
 
+let previousRandomIndex = 0;
 const getRandomJokes = () => {
-  const randomIndex = Math.floor(Math.random() * jokes.length);
+  let randomIndex;
+  do {
+    randomIndex = Math.floor(Math.random() * jokes.length);
+  } while (randomIndex === previousRandomIndex);
+  previousRandomIndex = randomIndex;
+
   return jokes[randomIndex];
 };
 
