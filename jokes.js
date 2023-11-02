@@ -6,7 +6,7 @@ const jokes = [
   'What do you call a bear with no teeth? A gummy bear.',
   'Why are snails slow? Because they are carrying a house on their back.',
   'What is fast, loud and crunchy? A rocket chip.',
-  'What do you call a guy who’s really loud? Mike.',
+  'What do you call a guy who is really loud? Mike.',
 ];
 
 const jokeElement = document.getElementById('joke');
@@ -16,5 +16,10 @@ const getRandomJokes = () => {
   const randomIndex = Math.floor(Math.random() * jokes.length);
   return jokes[randomIndex];
 };
-console.log(getRandomJokes());
+
+const displayRandomJoke = () => {
+  const randomJokes = getRandomJokes();
+  jokeElement.textContent = randomJokes;
+};
+
 getJokeButton.addEventListener('click', displayRandomJoke);
