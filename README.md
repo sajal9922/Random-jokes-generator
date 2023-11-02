@@ -6,3 +6,4 @@
 
 ### Project
 Codecademy JavaScript syntax Portfolio Project.
+[Click here]() to checkout theproject.
