@@ -6,4 +6,4 @@
 
 ### Project
 Codecademy JavaScript syntax Portfolio Project.
-[Click here]() to checkout theproject.
+[Click here](https://sajal9922.github.io/Random-jokes-generator/) to checkout theproject.
